@@ -2,6 +2,6 @@
 execution:
 - executor: jmeter
   scenario:
-    script: TestPlanBureacovaUpdate.jmx
+    script: EdidtedNewJmeterscript.jmx
     locations:
       us-east-1: 1
