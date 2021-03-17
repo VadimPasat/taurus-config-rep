@@ -5,7 +5,6 @@ pipeline {
            steps {
                script {
 				echo 'Starting test with Taurus'
-				source test/bin/activate 
 				bzt "jmeter/EdidtedNewJmeterscript.jmx -report -o settings.artifacts-dir=artifacts"
 				echo 'Test completed'
                }
