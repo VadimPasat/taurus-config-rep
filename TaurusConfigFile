@@ -1,11 +1,11 @@
 execution:
-- iterations: 50
-  concurrency: 10
+- iterations: 2
+  concurrency: 2
   scenario: with_script
 
 scenarios:
   with_script:
-    script: my-existing.jmx
+    script: EdidtedNewJmeterscript.jmx
     
 reporting:
 - module: final-stats
