@@ -1,12 +1,7 @@
+---
 execution:
-- iterations: 2
-  concurrency: 2
-  scenario: with_script
-
-scenarios:
-  with_script:
-    script: EdidtedNewJmeterscript.jmx
-    
-reporting:
-- module: final-stats
-  dump-xml: stats.xml
+- execurot: jmeter
+scenario:
+script: EdidtedNewJmeterscript.jmx
+location: 
+us-east-1: 1
