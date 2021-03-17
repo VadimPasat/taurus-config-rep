@@ -10,7 +10,7 @@ pipeline {
                       -o execution.10.concurrency=%users%   \
                       -o execution.100.hold-for=%duration%   \
                       -report'
-                echo 'Test completed'
+                echo 'Test dadsadacompleted'
             }
         }
     }
