@@ -5,6 +5,7 @@ pipeline {
            steps {
                script {
 				echo 'Starting test with Taurus'
+				sudo pip install bzt
 				bzt "jmeter/EdidtedNewJmeterscript.jmx -report -o settings.artifacts-dir=artifacts"
 				echo 'Test completed'
                }
