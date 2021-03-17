@@ -1,6 +1,0 @@
-execution:
-- executoe: jmeter
-scenario:
-script: EdidtedNewJmeterscript.jmx
-location:
-us-east-1: 1
