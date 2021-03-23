@@ -16,7 +16,7 @@ pipeline {
                 echo 'Starting test with Jmeter'
                 bat """
                  CALL C:\\apache-jmeter-5.4.1\\bin\\jmeter.bat -n -t C:\\NewPerformanceTask\\EdidtedNewJmeterscript.jmx ^
-                    -Jduration=${duration} -Jusers=${users} -jrampUp=${rampUp} - report -Jjmeterengine.force.system.exit=true
+                    -Jduration=${duration} -Jusers=${users} -jrampUp=${rampUp} -Jjmeterengine.force.system.exit=true
                 """
                 echo 'Test completed'
             }
