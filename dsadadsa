@@ -17,13 +17,7 @@ pipeline {
                 bat """
                  CALL C:\\apache-jmeter-5.4.1\\bin\\jmeter.bat -n -t C:\\NewPerformanceTask\\EdidtedNewJmeterscript.jmx ^
                     -Jduration=${duration} -Jusers=${users} -jrampUp=${rampUp}
-		    publishHTML (target : [allowMissing: false,
- alwaysLinkToLastBuild: true,
- keepAll: true,
- reportDir: 'reports',
- reportFiles: 'myreport.html',
- reportName: 'My Reports',
- reportTitles: 'The Report'])
+		    -Jjmeterengine.force.system.exit=true
                 """
                 echo 'Test dasdacompleted'
             }
