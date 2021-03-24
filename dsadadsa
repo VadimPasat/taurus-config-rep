@@ -17,7 +17,6 @@ pipeline {
                 bat """
                  CALL C:\\apache-jmeter-5.4.1\\bin\\jmeter.bat -n -t C:\\NewPerformanceTask\\EdidtedNewJmeterscript.jmx ^
                     -Jduration=${duration} -Jusers=${users} -jrampUp=${rampUp} -Jjmeterengine.force.system.exit=true
-		    -l C:\NewPerformanceTask\Raport\log-%date:~10,4%-%date:~4,2%-%date:~7,2%-%time:~0,2%_%time:~3,2%.csv -e -o C:\NewPerformanceTask\Raport\HTML\%date:~10,4%-%date:~4,2%-%date:~7,2%-%time:~0,2%_%time:~3,2% ^
                 """
                 echo 'Test dasdacompleted'
             }
